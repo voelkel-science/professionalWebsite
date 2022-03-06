@@ -1,0 +1,612 @@
+
+
+/* slideshow CSS template */ 
+.root :global {
+  --main-hover-color: rgb(114, 239, 250);
+}
+
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: linear-gradient(90deg, rgba(60, 181, 197, 0.3) 0%, rgba(122, 224, 255, 0.3) 50%, rgba(112, 69, 252, 0.3) 100%);
+  background: white;
+  box-shadow: 0 0 5px black;
+  height: 50px;
+}
+
+.navLink {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0;
+  background-color: white;
+}
+
+.navButton,
+.logoButton,
+.signUpButton,
+.loginButton{
+  width:clamp(20px,100%,150px);
+  height: 50px;
+  padding:5px;
+  font-size: 20px;
+  text-align: center;
+  margin:0px;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 0px lightgrey solid;
+  transition-duration: 0.45;
+
+}
+
+.logoButton{
+  width:clamp(20px,100%,170px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.loginButton{
+  background-color: rgba(177, 60, 255, 0.3);
+}
+
+.signUpButton{
+  background-color: rgba(60, 181, 197, 0.3);
+}
+
+
+.navButton:hover,
+.logoButton:hover,
+.signUpButton:hover,
+.loginButton:hover{
+  margin:0px;
+  padding:5px;
+  border-radius: 0px;
+  border: 0px lightgrey solid;
+  background-color: rgb(114, 239, 250);  
+  color:black;
+  animation: none;
+  box-shadow: 0 0 0px black;
+}
+
+.loginButton:hover{
+  background: rgba(177, 60, 255, 0.7);
+}
+
+.signUpButton:hover{
+  background: rgb(114, 239, 250);
+}
+
+.logoButton:hover{
+  background: linear-gradient(90deg, rgba(60, 181, 197, 0.3) 0%, rgba(64, 210, 255, 0.3) 50%, rgba(177, 60, 255, 0.3) 100%);
+}
+
+.roomButton{
+  width:clamp(20px,100%,60px);
+  height: clamp(50px,80%,60px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+}
+
+.roomButton:hover{
+  background-color: rgb(114, 239, 250);
+  color:black;
+  animation: none;
+}
+
+.galleryButton{
+  width:clamp(20px,100%,360px);
+  height: clamp(50px,80%,60px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+}
+
+.galleryButton:hover{
+  background-color: rgb(114, 239, 250);
+  color:black;
+  animation: none;
+}
+
+.bioButton{
+  width:clamp(20px,100%,120px);
+  height: clamp(50px,80%,60px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+}
+
+.bioButton:hover{
+  background-color: rgb(114, 239, 250);
+  color:black;
+  animation: none;
+}
+
+.otherButton{
+  width:clamp(20px,100%,120px);
+  height: clamp(50px,80%,60px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+}
+
+.otherButton:hover{
+  background-color: rgb(114, 239, 250);
+  color:black;
+  animation: none;
+}
+
+.tagButton{
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  /*background-color: rgb(114, 218, 250); 
+  background-color: white; */
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+  box-shadow: 0 0 0px black;
+}
+
+.tagButton:hover{
+  background-color: rgb(255, 255, 255);
+  color:black;
+  animation: none;
+  box-shadow: 0 0 0px black;
+  opacity: 0.5;
+}
+
+.mediaButton{
+  width:clamp(20px,100%,60px);
+  height: clamp(50px,80%,60px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  /*background-color: rgb(114, 218, 250); */
+  background-color: white; 
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+  box-shadow: 0 0 1px black;
+}
+
+.mediaButton:hover{
+  background-color: rgb(114, 239, 250);
+  color:black;
+  animation: none;
+  box-shadow: 0 0 0px black;
+}
+
+
+.mainElemButton{
+  position: absolute;
+  right: 10px;
+  width:clamp(25px,100%,20px);
+  height: clamp(25px,80%,20px);
+  padding:5px;
+  font-size: 25px;
+  text-align: center;
+  margin:5px;
+  border-radius: 3px;
+  /*background-color: rgb(114, 218, 250); */
+  background-color: white; 
+  color: black;
+  border: 1px lightgrey solid;
+  transition-duration: 0.45;
+  box-shadow: 0 0 1px black;
+}
+
+.mainElemButton:hover{
+  background-color: rgb(128, 36, 36);
+  color:black;
+  animation: none;
+  box-shadow: 0 0 0px black;
+}
+
+
+.redBack{
+  background-color: red;
+}
+
+.gradientBack{
+ /* background: linear-gradient(90deg, #ed46fc 0%, #3fb0fb 30% , white 60%); */
+ 
+ background: linear-gradient(90deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%);
+ background: linear-gradient(90deg, rgba(0, 255, 221, 0.01) 0%,  rgba(16, 253, 28, 0.01) 100%);
+}
+
+.solidBack{
+  background: grey; 
+ /* background: linear-gradient(90deg,rgba(0,212,255,1) 0%, white 25%, white 100%); */
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 25%;
+left: 10%;
+width: 5%;
+padding: 16px;
+margin-top: 0px;
+color: rgb(3, 187, 243);
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+left: 85%;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+  /* Next & previous buttons */
+.prevPrev,
+.nextPrev {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: rgb(3, 187, 243);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextPrev {
+  left: 90%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevPrev {
+  left: 0%;
+  border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prevPrev:hover,
+.nextPrev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #727272;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: rgb(83, 83, 83);
+padding: 2px 8px;
+font-size: 22px;
+color: rgb(0, 217, 255);
+}
+
+.row:after {
+content: "";
+display: flex;
+clear: both;
+}
+
+.outerPreviewContainer{
+  float:auto;
+  width:80%;
+  position: relative;
+  left:10%;
+  overflow-x:scroll;
+  background:#fff;
+}
+
+.titleContainer{
+  float:auto;
+  height: 50px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background:rgb(255, 255, 255);
+}
+
+.titleContainer:hover{
+  float:auto;
+  min-height: 40px;
+  overflow:wrap;
+  background:rgb(255, 255, 255);
+}
+
+.innerPreviewContainer{
+height:200px;
+background:#fff;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 100px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+.styled-scrollbars {
+/* Foreground, Background */
+scrollbar-color: #999 #333;
+}
+.styled-scrollbars::-webkit-scrollbar {
+width: 10px; /* Mostly for vertical scrollbars */
+height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+background: #999;
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+background: #333;
+}
+
+
+.mainElementContainer{
+position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+.mainElement{
+  width:100%;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.mainElementTopLine{
+  width:100%;
+  height: auto;
+  position: relative;
+}
+
+.pdfElement{
+  width:100%;
+  height: 100%;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.galleryElementImage{
+  max-width:350px;
+  border: 0px solid black;
+  box-shadow: 0 0 5px black;
+  background-color: white;
+}
+
+.galleryElementImage:hover{
+  box-shadow: 0 0 10px black;
+}
+
+.customBorder{
+  border: 2px solid black;
+}
+
+.customBorderHeader{
+ border-bottom: 2px solid black;
+}
+
+
+
+.shortBio{
+  font-style:italic;
+  overflow: hidden;
+  height: auto;
+ }
+
+ .shortBio:hover{
+  font-style:italic;
+  overflow: hidden;
+  height: auto;
+ }
+
+.img {
+  max-height:250px;
+  width: auto;
+  height: auto;
+}
+
+.galleryElement{
+  min-width:400px;
+  max-height:400px;
+  opacity: 0.5;
+}
+
+.galleryElement:hover {
+  opacity: 1.0;
+}
+
+/* social media icons   */ 
+.fa {
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  background: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-orcid {
+  background: #0a491a;
+  color: white;
+}
