@@ -5,10 +5,11 @@ import Link from 'next/link'
 
 
 
-
 export function Navbar(){
 
 	return(
+        <>
+
         <nav className={`${styles.navbar}   ${`navbar`} ${`sticky-top`} ${`navbar-expand-lg`} ${`navbar-light`} ${`bg-light`}  `} style={{navbarPadding: '20px'}}>
         
         
@@ -20,25 +21,36 @@ export function Navbar(){
         <p style={{paddingLeft:'10px', paddingTop:'5px'}}> Home </p>
         </a>
         </Link>
-        <button className={`${`navbar-toggler`}  ${styles.roomButton} `} type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <button 
+            className={`${styles.menuButton} navbar-toggler toggler-example`} 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span >
+                    <i className={`${`fa`} ${`fa-bars`}`}></i>
+                </span>
+            </button>
         
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <div class=" navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div className=" navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
                 <Link href={'/#projects'}>
                     <button className={`${styles.navButton}`}> projects </button>
                 </Link>
                 <Link href={'/#publications'}>
                     <button className={`${styles.navButton}`}> publications </button>
                 </Link>
+            </ul>
             </div>
         </div>
 
 
         </nav>
-       
+       </>
 	);
 
 };

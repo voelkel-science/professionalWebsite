@@ -33,14 +33,14 @@ export function Bachelor (clicked){
  function Content (){
     
     return(
-        <div id="PhD" class="tabcontent">
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+        <div id="PhD" className="tabcontent">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
             Dynamical friction in the common envelope phase
             </p>
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center w3-red">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center w3-red">
                 University of Tübingen
             </p>
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
                 The project aimed to investigate the effect of dynamical friction on the envelope of red giant stars.
 				For this I used 3D hydrodynamics simulations to model the common envelope phase of giant planets within the atmoshpere of red giants.
             </p>

@@ -15,7 +15,7 @@ export function PaperEmbryoFormationTwo (clicked){
 
 
     return(
-        <div class=" w3-center">
+        <div className=" w3-center">
             <p>
             <button className={`${styles.roomButton}`} style={{width : '90%'}}	onClick={onClickResults} >
                 Linking planetary embryo formation to planetesimal formation II
@@ -35,17 +35,17 @@ function PaperContent (){
         <div>
             <div>
                 <h4 style= {{color:'blue' , fontSize:'32px'}}>
-                    <a href="https://www.aanda.org/articles/aa/full_html/2021/01/aa39245-20/aa39245-20.html" class="w3-button w3-white w3-large w3-margin-top w3-opacity w3-hover-pale-green w3-hover-opacity-off">
+                    <a href="https://www.aanda.org/articles/aa/full_html/2021/01/aa39245-20/aa39245-20.html" className="w3-button w3-white w3-large w3-margin-top w3-opacity w3-hover-pale-green w3-hover-opacity-off">
                         Astronomy & Astrophysics, Volume 645, id.A132, 12 pp.
                     </a>
                 </h4>
             </div>
-            <div class=" w3-left-align w3-half">
+            <div className=" w3-left-align w3-half">
                 <figure>
-                    <div class="w3-third w3-left-align " style={{maxWidth: '200px'}} >
-                        <div onclick="window.location=''" class="w3-card w3-hover-shadow w3-margin-right w3-pale-green ">
+                    <div className="w3-third w3-left-align " style={{maxWidth: '200px'}} >
+                        <div onClick="window.location=''" className="w3-card w3-hover-shadow w3-margin-right w3-pale-green ">
                             <a href = "https://ui.adsabs.harvard.edu/abs/2021A%26A...645A.132V/abstract">
-                                <img class="w3-round w3-image w3-margin-top" src="paper2.png"
+                                <img className="w3-round w3-image w3-margin-top" src="paper2.png"
                                     style={{width:'100%' , maxWidth:'200px'}} / >
                             </a>
                         </div>
@@ -66,13 +66,13 @@ function PaperContent (){
                     </figcaption>
                 </figure>
             </div>
-            <div class=" w3-left-align w3-half" >
+            <div className=" w3-left-align w3-half" >
             <figure>
-                    <div class="w3-third w3-center" style={{maxWidth:'1000px'}} >
-                        <div onclick="window.location=''" class="w3-card w3-hover-shadow w3-margin-left w3-margin-right w3-pale-green ">
+                    <div className="w3-third w3-center" style={{maxWidth:'1000px'}} >
+                        <div onClick="window.location=''" className="w3-card w3-hover-shadow w3-margin-left w3-margin-right w3-pale-green ">
                             <Link href="mass_13_slope_15II.jpg">
                                 <a>
-                                    <img class="w3-round w3-image w3-margin-top" src="mass_13_slope_15II.jpg"
+                                    <img className="w3-round w3-image w3-margin-top" src="mass_13_slope_15II.jpg"
                                         style={{width:'100%' , maxWidth: '1000px'}} / >
                                 </a>
                             </Link>

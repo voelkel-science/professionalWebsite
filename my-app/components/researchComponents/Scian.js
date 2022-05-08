@@ -5,7 +5,6 @@ import styles from '../ProfilePage.module.css'
 
 export function Scian (props){
     const [showResults, setShowResults] = useState(props.showScian)
-    console.log('in scina ',props.showScian)
 
     const onClickResults = () =>{
         if(!showResults) setShowResults(true)
@@ -30,7 +29,7 @@ export function Scian (props){
     return(
         <div>
             <h2 style={{padding: '20px', borderBottom: '2px solid black' }}> sci.an </h2>
-             <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+             <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
                 sci.an (scientific area network) is a virtual conferencing and meeting platform with a current focus on academic networking.
                 The project is in a closed beta version at the Max Planck Institute for astronomy in Heidelberg.
                 Its long term aspiration is to be a sustainable and socially inclusive alternative to physical conferencing.
@@ -42,7 +41,7 @@ export function Scian (props){
                 </a>.
             </p>
             <div>
-                <img src="scian_background.png" alt="Avatar" class="image" style={{width:'100%'}} />
+                <img src="scian_background.png" alt="Avatar" className="image" style={{width:'100%'}} />
             </div>
         </div>
     );

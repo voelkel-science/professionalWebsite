@@ -18,6 +18,7 @@ import { PopulationSynthesis } from "./researchComponents/PopulationSynthesis";
 import { PaperEmbryoFormationTwo } from "./paperComponents/PaperEmbryoFormationTwo"
 import { PaperEmbryoFormationOne } from "./paperComponents/PaperEmbryoFormationOne"
 import { PaperPlanetesimalFormation } from "./paperComponents/PaperPlanetesimalFormation"
+import { PaperEmbryoGenerations } from "./paperComponents/PaperEmbryoGenerations"
 
 
 
@@ -52,7 +53,7 @@ export  function ProfilePage(){
 					showPPS={showPPS} 
 					setShowPPS={setShowPPS}
 					/>
-				<div class = 'w3-center w3-padding'>
+				<div className= 'w3-center w3-padding'>
 
 						<Scian showScian={showScian} />
 						<PlanetesimalFormation showPtsF={showPtsF} />
@@ -66,6 +67,7 @@ export  function ProfilePage(){
 								Selected Publications
 							</h4>
 						</div>
+						<PaperEmbryoGenerations />
 						<PaperEmbryoFormationTwo />
 						<PaperEmbryoFormationOne />
 						<PaperPlanetesimalFormation />

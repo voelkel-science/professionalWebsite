@@ -25,12 +25,12 @@ export function ProfilePicture (clicked){
 
 
     return(
-        <figure class ='w3-center'>
-            <div class=" w3-center w3-padding"  style={{maxWidth: "350px", borderRight: '1px solid black'}} >
-                <div class="container">
-                    <img src="profilePicPro.jpeg" alt="Avatar" class="w3-image" style={{maxWidth: "100%" , borderRadius: "5px"}}/>
-                    <div class="bottom">
-                        <div class='w3-large w3-center'>
+        <figure className='w3-center'>
+            <div className=" w3-center w3-padding"  style={{maxWidth: "350px", borderRight: '1px solid black'}} >
+                <div className="container">
+                    <img src="profilePicPro.jpeg" alt="Avatar" className="w3-image" style={{maxWidth: "100%" , borderRadius: "5px"}}/>
+                    <div className="bottom">
+                        <div className='w3-large w3-center'>
                                 voelkel[at]mpia.de
                         </div>
                     </div>

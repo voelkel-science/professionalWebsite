@@ -17,10 +17,10 @@ export function CV (clicked){
 
 
     return(
-        <div class="w3-container w3-center">
+        <div className="w3-container w3-center">
             <a name="CV"></a>
             <div>
-                <h4 class = 'w3-center' style = {{fontSize: '24px' , marginTop:'25px' }}>
+                <h4 className= 'w3-center' style = {{fontSize: '24px' , marginTop:'25px' }}>
                 <Link href="Resume_Oliver_Voelkel.pdf">
                     <a> 
                         <button className={`${styles.roomButton}`} style={{width:'250px'}}	onClick={onClickResults} >
@@ -30,8 +30,9 @@ export function CV (clicked){
                 </Link>
                 </h4>
             </div>
+            {/*
             <div>
-                <h4 class = 'w3-center' style = {{fontSize: '24px' , marginTop:'0px' }}>
+                <h4 className= 'w3-center' style = {{fontSize: '24px' , marginTop:'0px' }}>
                 <Link href="CV_Voelkel.pdf">
                     <a> 
                         <button className={`${styles.roomButton}`} style={{width:'250px'}}	onClick={onClickResults} >
@@ -41,6 +42,7 @@ export function CV (clicked){
                 </Link>
                 </h4>
             </div>
+            */}
         </div>
 
     );

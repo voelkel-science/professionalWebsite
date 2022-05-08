@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from '../ProfilePage.module.css';
 
 
-export function PaperPlanetesimalFormation (clicked){
+export function PaperEmbryoGenerations (clicked){
     const [showResults, setShowResults] = useState(false)
     
     const onClickResults = () =>{
@@ -15,10 +15,10 @@ export function PaperPlanetesimalFormation (clicked){
 
 
     return(
-        <div className=" w3-center" id="paperOne">
+        <div className=" w3-center">
             <p>
             <button className={`${styles.roomButton}`} style={{width : '90%'}}	onClick={onClickResults} >
-                The effect of pebble flux regulated planetesimal formation on the formation of giant planets
+            Exploring multiple generations of planetary embryos
                 </button>
             </p>
             <div id="PhD">
@@ -35,8 +35,8 @@ function PaperContent (){
         <div>
             <div>
                 <h4 style= {{color:'blue' , fontSize:'32px'}}>
-                <a href="https://www.aanda.org/articles/aa/full_html/2020/10/aa38085-20/aa38085-20.html" className="w3-button w3-white w3-large w3-margin-top w3-opacity w3-hover-pale-blue w3-hover-opacity-off">
-                Astronomy & Astrophysics, Volume 642, id.A75, 13 pp.
+                    <a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202141830" className="w3-button w3-white w3-large w3-margin-top w3-opacity w3-hover-pale-green w3-hover-opacity-off">
+                        Astronomy & Astrophysics, Forthcoming article.
                     </a>
                 </h4>
             </div>
@@ -44,8 +44,8 @@ function PaperContent (){
                 <figure>
                     <div className="w3-third w3-left-align " style={{maxWidth: '200px'}} >
                         <div onClick="window.location=''" className="w3-card w3-hover-shadow w3-margin-right w3-pale-green ">
-                        <a href = "https://ui.adsabs.harvard.edu/abs/2020A%26A...642A..75V/abstract">
-                                <img className="w3-round w3-image w3-margin-top" src="paperEffect.png"
+                            <a href = "https://ui.adsabs.harvard.edu/abs/2022arXiv220201500V/abstract">
+                                <img className="w3-round w3-image w3-margin-top" src="paper4.png"
                                     style={{width:'100%' , maxWidth:'200px'}} / >
                             </a>
                         </div>
@@ -56,9 +56,9 @@ function PaperContent (){
                                 Quick summary
                             </h4>
                             <p style={{color: 'black' , fontSize:'18px'}}>
-                            How does the distribution of planetesimals determine the evolution of planetary systems? This work investigates different planetesimal distributions in circumstellar disks and the effect that dynamical planetesimal formation can have on planet formation.
-                            We find that a steep planetesimal surface density profile can enable the formation of giant planets, even for large planetesimal sizes of 100km.
-                            Without the steep planetesimal surface density profile, no giant planets would form for planetesimals of that size.
+                            How many planets does a circumstellar disk form? When do they form? And how does this affect their evolution?
+                            In order to understand these questions, here we investigate the formation of planetary embryos in the first global, self consistent planet formation model.
+                            We show that the consistent formation of planetary embryos can cause the formation of multiple distinct generations of planets within the lifetime of the gas disk. 
                         </p>
                         </p>
                     </figcaption>
@@ -68,9 +68,9 @@ function PaperContent (){
             <figure>
                     <div className="w3-third w3-center" style={{maxWidth:'1000px'}} >
                         <div onClick="window.location=''" className="w3-card w3-hover-shadow w3-margin-left w3-margin-right w3-pale-green ">
-                            <Link href="PlotPaperI.jpg">
+                            <Link href="Generations.png">
                                 <a>
-                                    <img className="w3-round w3-image w3-margin-top" src="PlotPaperI.jpg"
+                                    <img className="w3-round w3-image w3-margin-top" src="Generations.png"
                                         style={{width:'100%' , maxWidth: '1000px'}} / >
                                 </a>
                             </Link>
@@ -82,9 +82,8 @@ function PaperContent (){
                                 In one figure
                             </h4>
                             <p style={{color:'black' , fontSize:'18px'}}>
-                            Here we show the four different synthetic populations of planets for different planetesimal surface density distributions. 
-                            We can see that only the steep surface density profiles can enable the formation of giant planets.
-							This steep profile is not an assumption, it is the result of smaller material drifting inward over time, leading to highly condensed zones of planetesimals in the inner disk.
+                            This figure shows the planetary evolution in the circumstellar disk. The color indicated the composition of the formed planets.
+                            It vividly displays how much more complex a planetary system becomes when the formation of planets does not follow an initial assumption.
                             </p>
                         </p>
                     </figcaption>

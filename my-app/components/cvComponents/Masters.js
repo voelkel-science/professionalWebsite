@@ -33,14 +33,14 @@ export function Masters (clicked){
  function Content (){
     
     return(
-        <div id="PhD" class="tabcontent">
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+        <div id="PhD" className="tabcontent">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
                 Master Thesis - Moment methods for radiation hydrodynamics
             </p>
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center w3-red">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center w3-red">
                 University of Tübingen
             </p>
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
                 In this project I implemented a moment method for radiative transfer into the radiation hydrodynamics code PLUTO.
 				The method used is called M1 and it shows majorly improvement behavior for solving anisotropic radiation problems when compared to the previously implemented FLD-method.
             </p>

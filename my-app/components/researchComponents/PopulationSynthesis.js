@@ -30,7 +30,7 @@ export function PopulationSynthesis (props){
     return(
         <div>
             <h2 style={{padding: '20px', borderBottom: '2px solid black' }}>Planet population synthesis </h2>
-             <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+             <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
                 Planet population synthesis is a powerful tool that can be used to connect the outcome of planet formation simulations with exoplanet observations. 
                 Within this approach we compute a synthetic population of planets. 
                 This means we conduct a large set of simulations, each representing the evolution of one planetary system using a global model of planet formation.

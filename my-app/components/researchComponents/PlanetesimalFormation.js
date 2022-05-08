@@ -28,9 +28,9 @@ export function PlanetesimalFormation (props){
  function PlanetesimalContent (){
     
     return(
-        <div id="Planetesimal" class="tabcontent">
+        <div id="Planetesimal" className="tabcontent">
             <h2 style={{padding: '20px', borderBottom: '2px solid black' }}>Planetesimal formation </h2>
-            <p style={{color:'black' , fontSize:'18px'}} class="w3-center">
+            <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
             Planetesimals are solid objects in the size range of several hundred meters to several hundred kilometers. Next to the much smaller pebbles, they are the main forming blocks of planets.
             Where, when and how many of these objects form therefore majorly affects planet formation. My research in this field focuses on the early formation of planetetsimals and how their distribution shapes the evolution of planetary systems.
             </p>

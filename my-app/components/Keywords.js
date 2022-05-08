@@ -3,7 +3,6 @@ import Head from 'next/head'
 import styles from './ProfilePage.module.css';
 
 import { TagCloud } from 'react-tagcloud'
-import ReactWordcloud from 'react-wordcloud';
 
 
 
@@ -19,8 +18,7 @@ export function Keywords (props){
     }; 
 
     const toggleField = (value) =>{
-      console.log('clicked')
-      console.log(props.showScian)
+
       if(value=='sci.an'){
         if(!props.showScian) {
           props.setShowScian(true)
@@ -103,14 +101,6 @@ export function Keywords (props){
       },
     ]
      
-    const MyWordcloud = () => (
-        <ReactWordcloud
-          callbacks={callbacks}
-          options={options}
-          size={size}
-          words={words}
-        />
-      );
 
 
       useEffect(() => {
