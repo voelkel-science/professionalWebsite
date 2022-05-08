@@ -35,15 +35,15 @@ export function Exist (clicked){
     return(
         <div>
              <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
-                EXIST Gründerstipendium
+                EXIST Gründerstipendium & Postdoc
             </p>
             <p style={{color:'black' , fontSize:'18px'}} className="w3-center w3-blue">
                 Max Planck Institute for Astronomy
             </p>
             <p style={{color:'black' , fontSize:'18px'}} className="w3-center">
-                The main goal of the thesis is to implement and investigate the effect of multiple physical processes into a global model of planet formation and planet population synthesis framework.
-                This involves the evolution of dust and pebbles, the formation of planetesimals and the formation of planetary embryos in a self consistent fashion.
-                Publications on individual aspects of this larger attempt can be found below.
+                Over the next year I will be working on the virtual meeting and discussion platform sci.an as project manager and design lead.
+                All info on the platform can be found throughout my website.   
+                In parallel I work as a postdoc in planet formation, further improving global planet formation models.
             </p>
         </div>
     );

@@ -34,10 +34,11 @@ export function Coding (clicked){
     return(
         <div>
              <p style={{color:'black' , fontSize:'20px'}} className="w3-left-align w3-padding">
-               <b> Software developement </b>
+               <b> Software & Web developement </b>
             </p>
             <p style={{color:'black' , fontSize:'16px' , marginTop:'-30px'}} className="w3-left-align w3-padding">
-                C, C++, C#, Fortran, python, JS
+                Next.js, React, Three.js, Javascript, <br/>
+                C, C++, C#, Fortran, python
             </p>
             <p style={{color:'black' , fontSize:'20px' , marginTop:'-20px'}} className="w3-left-align w3-padding">
                 <b> Data visualization </b> 

@@ -18,6 +18,7 @@ export function CV (clicked){
 
     return(
         <div className="w3-container w3-center">
+            {/*
             <a name="CV"></a>
             <div>
                 <h4 className= 'w3-center' style = {{fontSize: '24px' , marginTop:'25px' }}>
@@ -30,7 +31,7 @@ export function CV (clicked){
                 </Link>
                 </h4>
             </div>
-            {/*
+            
             <div>
                 <h4 className= 'w3-center' style = {{fontSize: '24px' , marginTop:'0px' }}>
                 <Link href="CV_Voelkel.pdf">
